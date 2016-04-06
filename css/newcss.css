@@ -28,6 +28,18 @@ h1,h2,h3,h4,h4,h6{
     margin:0px 0px 10px; 
     box-shadow: 0px 2px 5px #333333;
 }
+
+.terms-page .navbar-default.navbar-fixed-top {
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0px 0px 10px;
+    box-shadow: 0px 2px 5px #333333;
+}
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
     color:#fff;
 }
@@ -268,11 +280,11 @@ blockquote {
         text-align: center;
     }
 
-    .navbar-default.affix {
+    .navbar-default.affix , .terms-page .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
         background-color: #01af97;
         box-shadow: none;
-        
+        background-image: none;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -600,7 +612,7 @@ footer h2{
     margin: 0px;
     
 }
-footer .copyrights{
+footer .copyrights , footer .copyrights a{
     background-color:#313131;
     color:#00a896;
     margin:0px;
