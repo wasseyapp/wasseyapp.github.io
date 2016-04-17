@@ -28,6 +28,18 @@ h1,h2,h3,h4,h4,h6{
     margin:0px 0px 10px; 
     box-shadow: 0px 2px 5px #333333;
 }
+
+.terms-page .navbar-default.navbar-fixed-top {
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0px 0px 10px;
+    box-shadow: 0px 2px 5px #333333;
+}
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
     color:#fff;
 }
@@ -255,7 +267,7 @@ blockquote {
 .item blockquote p:before {
     content: "\f10d";
     font-family: 'Fontawesome';
-    float: left;
+    /*float: left;*/
     margin-right: 10px;
 }
      #owl-demo .item{
@@ -268,11 +280,11 @@ blockquote {
         text-align: center;
     }
 
-    .navbar-default.affix {
+    .navbar-default.affix , .terms-page .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
         background-color: #01af97;
         box-shadow: none;
-        
+        background-image: none;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -600,7 +612,7 @@ footer h2{
     margin: 0px;
     
 }
-footer .copyrights{
+footer .copyrights , footer .copyrights a{
     background-color:#313131;
     color:#00a896;
     margin:0px;
@@ -664,6 +676,12 @@ content: "\f09a";
 #tw:after{
     content: "\f099";
 }
+#email:after{
+    content: "\f0e0";
+    font-size: 24px;
+    top: 1px;
+    left: 7px;
+}
 #img1{
     position:absolute; top:105px; display: none; left:45px;
 }
@@ -690,12 +708,12 @@ content: "\f09a";
     visibility: visible;
     display: inline-block;
     width: 100%;
-    height: 200px !important; 
+    height: 460px !important; 
     padding: 0px;
     border: none;
    // max-width:820px!important ;
     min-width: 200px!important;
-    min-height: 200px;
+    min-height: 460px!important;
     margin-top: 0px;
     margin-bottom: 0px;
 }
